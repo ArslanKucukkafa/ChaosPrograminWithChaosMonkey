@@ -1,4 +1,4 @@
-package com.ozguryazilim.telve.boot.ymgkchaos.adivces;
+package com.firat.project.ymgkchaos.adivces;
 
 public class ProjectNotFoundException extends RuntimeException {
     public ProjectNotFoundException(String message) {

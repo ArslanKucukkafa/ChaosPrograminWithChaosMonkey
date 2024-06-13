@@ -1,8 +1,8 @@
-package com.ozguryazilim.telve.boot.ymgkchaos.services;
+package com.firat.project.ymgkchaos.services;
 
-import com.ozguryazilim.telve.boot.ymgkchaos.adivces.ProjectNotFoundException;
-import com.ozguryazilim.telve.boot.ymgkchaos.model.Projects;
-import com.ozguryazilim.telve.boot.ymgkchaos.repository.ProjectRepository;
+import com.firat.project.ymgkchaos.adivces.ProjectNotFoundException;
+import com.firat.project.ymgkchaos.model.Projects;
+import com.firat.project.ymgkchaos.repository.ProjectRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

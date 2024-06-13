@@ -1,4 +1,4 @@
-package com.ozguryazilim.telve.boot.ymgkchaos;
+package com.firat.project.ymgkchaos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

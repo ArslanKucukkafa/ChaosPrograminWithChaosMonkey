@@ -1,8 +1,8 @@
-package com.ozguryazilim.telve.boot.ymgkchaos.controller;
+package com.firat.project.ymgkchaos.controller;
 
-import com.ozguryazilim.telve.boot.ymgkchaos.model.Projects;
-import com.ozguryazilim.telve.boot.ymgkchaos.model.SaveProjectRequest;
-import com.ozguryazilim.telve.boot.ymgkchaos.services.ProjectService;
+import com.firat.project.ymgkchaos.model.Projects;
+import com.firat.project.ymgkchaos.services.ProjectService;
+import com.firat.project.ymgkchaos.model.SaveProjectRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

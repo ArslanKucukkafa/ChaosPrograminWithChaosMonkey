@@ -8,7 +8,7 @@
         <version>3.3.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.ozguryazilim.telve.boot</groupId>
+    <groupId>com.firat.project.telve.boot</groupId>
     <artifactId>ymgk-chaos</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ymgk-chaos</name>
