@@ -138,6 +138,8 @@ Bu sayede sistemdeki eksiklikleri ve hataları gözlemleyebilir ve düzeltebilir
 
 [Project Swagger](https://hybrid-circle-426017-j4.rj.r.appspot.com//swagger-ui/index.html) adresinden incelenebilir.
 
+> **Note:** .
+
 
 ### Projeyi hazırlayanlar
 
