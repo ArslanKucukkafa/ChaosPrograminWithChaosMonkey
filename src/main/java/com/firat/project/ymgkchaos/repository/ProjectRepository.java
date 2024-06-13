@@ -1,5 +1,5 @@
-package com.ozguryazilim.telve.boot.ymgkchaos.repository;
-import com.ozguryazilim.telve.boot.ymgkchaos.model.Projects;
+package com.firat.project.ymgkchaos.repository;
+import com.firat.project.ymgkchaos.model.Projects;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

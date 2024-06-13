@@ -1,4 +1,4 @@
-package com.ozguryazilim.telve.boot.ymgkchaos.model;
+package com.firat.project.ymgkchaos.model;
 
 import jakarta.persistence.*;
 
