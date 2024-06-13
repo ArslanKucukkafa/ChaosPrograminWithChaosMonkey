@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chaos Monkey Kontrol Paneli</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
         <h1 class="my-5 text-center">Chaos Monkey Kontrol Paneli</h1>
-        <form method="post" action="/chaosmonkey/assaults">
+        <form id="chaosForm">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="input-group mb-3">
-                        <input type="number" class="form-control" name="level" placeholder="Kaos Atağı Seviyesi (1-10)" aria-label="Kaos Atağı Seviyesi" aria-describedby="button-addon2" required>
+                        <input type="number" class="form-control" id="attackLevel" placeholder="Kaos Atağı Seviyesi (1-10)" aria-label="Kaos Atağı Seviyesi" aria-describedby="button-addon2" required>
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Kaos Atağı Uygula</button>
                         </div>
@@ -22,10 +24,79 @@
                 </div>
             </div>
         </form>
+
+        <!-- Sonuçları Gösterme Bölümü -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6">
+                <div id="result" class="alert alert-info" role="alert" style="display: none;"></div>
+            </div>
+        </div>
+
+        <!-- Grafik Bölümü -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8">
+                <canvas id="resultChart" width="400" height="200"></canvas>
+            </div>
+        </div>
     </div>
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Axios for HTTP requests -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        // Grafik için veri depolamak
+        let attackLevels = [];
+        let attackResults = [];
+
+        // Chart.js grafik ayarları
+        const ctx = document.getElementById('resultChart').getContext('2d');
+        const resultChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: attackLevels,
+                datasets: [{
+                    label: 'Kaos Atağı Sonuçları',
+                    data: attackResults,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        document.getElementById('chaosForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const level = document.getElementById('attackLevel').value;
+
+            axios.post('http://hybrid-circle-426017-j4.rj.r.appspot.com/actuator/chaosmonkey/assaults', {
+                level: level,
+                latencyActive: false,
+                exceptionsActive: true
+            })
+            .then(response => {
+                document.getElementById('result').style.display = 'block';
+                document.getElementById('result').innerHTML = 'Atağın Sonucu: ' + response.data;
+
+                // Grafiğe yeni veri ekleme
+                attackLevels.push(level);
+                attackResults.push(response.data);
+
+                resultChart.update();
+            })
+            .catch(error => {
+                document.getElementById('result').style.display = 'block';
+                document.getElementById('result').innerHTML = 'Hata: ' + error.response.data.message;
+            });
+        });
+    </script>
 </body>
 </html>
