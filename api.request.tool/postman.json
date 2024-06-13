@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "a5eacdaf-34ad-4cf4-a2d6-840887ba5507",
+		"name": "ymgk_project_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36292104"
+	},
+	"item": [
+		{
+			"name": "Update ChaosMonkey Watchers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "insomnia/9.2.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"controller\": false,\n\t\"restController\": true,\n\t\"service\": false,\n\t\"repository\": false,\n\t\"component\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://hybrid-circle-426017-j4.rj.r.appspot.com/actuator/chaosmonkey/watchers",
+					"protocol": "http",
+					"host": [
+						"hybrid-circle-426017-j4",
+						"rj",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"actuator",
+						"chaosmonkey",
+						"watchers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ChaosMonkey Watchers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "insomnia/9.2.0"
+					}
+				],
+				"url": {
+					"raw": "http://hybrid-circle-426017-j4.rj.r.appspot.com/actuator/chaosmonkey/watchers",
+					"protocol": "http",
+					"host": [
+						"hybrid-circle-426017-j4",
+						"rj",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"actuator",
+						"chaosmonkey",
+						"watchers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ChaosMonkey Assaults",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "insomnia/9.2.0"
+					}
+				],
+				"url": {
+					"raw": "http://hybrid-circle-426017-j4.rj.r.appspot.com/actuator/chaosmonkey/assaults",
+					"protocol": "http",
+					"host": [
+						"hybrid-circle-426017-j4",
+						"rj",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"actuator",
+						"chaosmonkey",
+						"assaults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update ChaosMonkey Assaults",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  { \t\n\t\t\"level\": \"2\",\n\t\t\"latencyActive\":\"false\",\n\t\t\"exceptionsActive\":\"true\"\n\t\t\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://hybrid-circle-426017-j4.rj.r.appspot.com/actuator/chaosmonkey/assaults",
+					"protocol": "http",
+					"host": [
+						"hybrid-circle-426017-j4",
+						"rj",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"actuator",
+						"chaosmonkey",
+						"assaults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete A Project",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "insomnia/9.2.0"
+					}
+				],
+				"url": {
+					"raw": "https://hybrid-circle-426017-j4.rj.r.appspot.com/projects",
+					"protocol": "https",
+					"host": [
+						"hybrid-circle-426017-j4",
+						"rj",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update A Project",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "insomnia/9.2.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n\t\t\"id\": 1,\n\t\t\"title\": \"HAHAHAHAAHAHHA\",\n\t\t\"description\": \"This is a test project\",\n\t\t\"published\": true\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hybrid-circle-426017-j4.rj.r.appspot.com/projects",
+					"protocol": "https",
+					"host": [
+						"hybrid-circle-426017-j4",
+						"rj",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create A Project",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Test Project\",\n\t\"description\": \"This is a test project\",\n\t\"published\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hybrid-circle-426017-j4.rj.r.appspot.com/projects",
+					"protocol": "https",
+					"host": [
+						"hybrid-circle-426017-j4",
+						"rj",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Projects",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "insomnia/9.2.0"
+					}
+				],
+				"url": {
+					"raw": "https://hybrid-circle-426017-j4.rj.r.appspot.com/projects",
+					"protocol": "https",
+					"host": [
+						"hybrid-circle-426017-j4",
+						"rj",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"projects"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
