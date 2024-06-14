@@ -138,7 +138,9 @@ Bu sayede sistemdeki eksiklikleri ve hataları gözlemleyebilir ve düzeltebilir
 
 [Project Swagger](https://hybrid-circle-426017-j4.rj.r.appspot.com//swagger-ui/index.html) adresinden incelenebilir.
 
-> **Note:** .
+> **Note:** Bu projeyi kendi postman yada insomnia api istemcinizde kullanmak için ./tool altındaki dosyaları kullanabilirsiniz.
+
+> **Note:** Swagger da cors hatası ama örnek requet body ve response ları görebilirsiniz. 
 
 
 ### Projeyi hazırlayanlar
