@@ -150,5 +150,7 @@ Bu sayede sistemdeki eksiklikleri ve hataları gözlemleyebilir ve düzeltebilir
 
 | Ad     | soyad     | ögrenci no |
 |--------|-----------|------------|
-| İdris  | Aktaş     | 190541050  |
-| Arslan | Küçükkafa | 190541056  |
+| İdris  | Aktaş     | 190541056  |
+| Arslan | Küçükkafa | 190541050  |
+
+[Döküman](https://arslankucukkafa.000webhostapp.com/2024/06/yazilim-muhendisligi-guncel-konular-proje)
