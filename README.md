@@ -15,6 +15,9 @@ Chaos Monkey, Netflix'in daha geniş bir kaos mühendisliği araç setinin bir p
 
 Kaos mühendisliği, modern dağıtık sistemlerin ve mikro hizmet mimarilerinin güvenilirliğini artırmak için kritik bir yaklaşımdır ve Chaos Monkey, bu alanın en bilinen araçlarından biridir . 
 
+[Kaos mühendisliği ilkeleri](ARASTIRMA.md)
+
+
 ## Projenin amacı
 Bu projenin amacı, Chaos Monkey'nin temel özelliklerini ve kullanımını açıklamak, avantajlarını ve kapsamını belirtmek ve kaos mühendisliği kavramını genel olarak tanıtmaktır. Ayrıca, Chaos Monkey'nin nasıl kullanıldığını ve nasıl entegre edildiğini gösteren örnekler verilecektir.
 Chaos Monkey kullanımı sayesinde projenin gecikmeli isteklerde, hata fırlatma durumlarında, hafıza doluluk durumlarında, CPU yüklenme durumlarında ve uygulamanın öldürülmesi durumlarında nasıl davranacağını test edebilir ve karşı karşıya kalabileceği durumları gözlemleyebiliriz.
