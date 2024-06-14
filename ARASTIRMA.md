@@ -42,3 +42,6 @@ Deneyleri manuel olarak yürütmek zahmetlidir ve nihayetinde sürdürülebilir 
 Kaos Mühendisliği, dünyanın en büyük ölçekli operasyonlarında yazılımın nasıl tasarlandığını ve geliştirildiğini şimdiden değiştiren güçlü bir uygulamadır. Diğer uygulamalar hız ve esnekliği ele alırken, Kaos özellikle bu dağıtık sistemlerdeki sistemik belirsizlikle ilgilenir. Kaos İlkeleri, büyük ölçeklerde hızlı yenilik yapma güvenini sağlar ve müşterilere hak ettikleri yüksek kaliteli deneyimleri sunar.
 
 Kaos İlkelerinin uygulanması ve Kaos Topluluğundaki sürekli tartışmaya katılın.
+
+Kaynak
+[PRINCIPLES OF CHAOS ENGINEERING](https://principlesofchaos.org/?lang=ENcontent)
